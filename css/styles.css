@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #6110cc;
+}
+
+/* Navigation Menu*/
+.nav-menu {
+    list-style: none;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    background: linear-gradient(180deg, #830202 0%, #570202 100% );
+    padding: 3rem;
+    
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu {
+    margin:0 15px;
+}
+
+.nav-menu a {
+    background-color: #b89300;
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: background-color 0.5s ease;
+}
+
+.nav-menu a:hover {
+    background-color: #ebbe08;
+}
+
+.nav-menu li {
+    font-size: 20px;
+}
+
+/* Hero Section */
+
+header {
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+}
+
+
+.hero-image {
+    background-image: url("image/hero-image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    position: relative;
+}    
+.hero-text {
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 10rem;
+}
+
+/* Main Section */
+
+
+
+
+.card {
+  background-image: url('image/legoMilleniumfalcon.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+    /* Mobile Style*/
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    padding: 0 10px;
+}
+
+    /* Tablet Style */
+@media(min-width: 768px) {
+    .card-container {
+        grid-template-columns: 1fr 1fr; /* Tablet: 2 columns*/
+        gap: 25px;
+        padding: 0 20px;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    .card button {
+        width: auto; /* Button no longer full width */
+        padding: 12px 32px;
+    }
+}
+
+    /* Desktop Style */
+@media(min-width: 1024px) {
+    .card-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        padding: 0;
+    }
+
+    header h1 {
+        font-size: 3.5rem;
+    }
+
+    .card img {
+        height: 200px;
+        /* Slightly smaller images on desktio for better proportions */
+    }
+}
