@@ -109,34 +109,35 @@ header {
     max-width: 800px;
 }
 
-.hero-content h2 {
+.hero-content h1 {
     font-size: 4rem;
 }
 
+
+
 /* Main Section */
 
-
-.cards-section {
-    padding: 4rem 0;
+img {
+    width: 500px;
 }
 
-.section-title {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    font-weight: bold;
-}
-
-/* Cards Section */
-
-.cards-section {
-    padding: 4rem;
-}
-
-.cards-grid {
+.mainSection {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2rem;
+
+}
+
+.mainSection {
+    border: transparent;
+    background-color: var(--light-green);
+    padding: 10rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    border-radius: 1rem;
+    color: var(--black);
+    box-shadow: rgba(0, 0, 0, 0.7);
 }
 
 .card {
@@ -149,18 +150,9 @@ header {
     font-size: 1.4rem;
 }
 
-.card-image-container {
-    width: 100%;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-}
-
 .card img {
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     max-height: 250px;
 }
 
@@ -172,18 +164,8 @@ header {
     border-radius: 14px;
 }
 
-.btn-cards {
-    background-color: var(--rich-mahogany);
-}
 
-.btn-cards a {
-    color: var(--white);
-}
 
-.btn-cards:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);;
-}
 
 /* Footer Design */
 
@@ -265,6 +247,6 @@ header {
     }
 
     .hero-content  h1{
-        font-size: 1.5rem;
+        font-size: 4rem;
     }
 }
