@@ -167,11 +167,11 @@ img {
 }
 
 .cardImage {
-    background-image: url("../images/legoMilleniumfalconShip.jpg");
+    background-image: url("../images/vacation.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 60%;
+    /* width: 60%; */
     min-height: 500px;
 }
 
