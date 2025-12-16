@@ -186,6 +186,7 @@ img {
     padding: 5px 10px;
     border-style: none;
     border-radius: 14px;
+    transform: translateY(31.5rem);
 }
 
 .btn-cards {
@@ -194,11 +195,6 @@ img {
 
 .btn-cards a {
     color: var(--white);
-}
-
-.btn-cards:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);;
 }
 
 .credits a {
